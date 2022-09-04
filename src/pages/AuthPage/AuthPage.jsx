@@ -1,7 +1,7 @@
 
 import { useReducer } from 'react'
 import { useDispatch } from 'react-redux'
-import {useNavigate} from 'react-router-dom'
+// import {useNavigate} from 'react-router-dom'
 // import { addUser } from '../../redux/actions'
 import { addUser } from '../../redux/slice'
 
@@ -64,7 +64,7 @@ const reducer
 }
 
 const Authpage = () => {
-const navigate=useNavigate()
+// const navigate=useNavigate()
     const [state, dispatch] = useReducer(reducer, INITIAL_STATE)
     const reduxDispatch=useDispatch()
     const { name, password } = state
